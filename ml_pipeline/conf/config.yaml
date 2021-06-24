@@ -1,0 +1,9 @@
+work_dir: "${hydra:runtime.cwd}"
+data_dir: "${work_dir}/data"
+s3_bucket: "artifact-bucket-02fe135"
+base_uri: ""
+params:
+  learning_rate: 0.1
+  num_iterations: 10
+  feature_fraction: 0.8
+  bagging_fraction: 0.8

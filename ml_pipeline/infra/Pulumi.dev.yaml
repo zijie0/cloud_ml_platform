@@ -1,0 +1,4 @@
+config:
+  aws:region: us-east-2
+  ml_pipeline-infra:baseStack: zijie0/ml_infra/dev
+  ml_pipeline-infra:runID: 98110546d5f245e8af8c52f5697daa0b

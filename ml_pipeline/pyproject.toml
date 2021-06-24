@@ -1,0 +1,46 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "zijie0", email = "myoilbox@gmail.com"},
+]
+dependencies = [
+    "lightgbm~=3.2",
+    "mlflow~=1.18",
+    "boto3~=1.17",
+    "fastapi~=0.65",
+    "uvicorn~=0.14",
+    "dvc[s3]~=2.3",
+    "pyarrow~=4.0",
+    "scikit-learn~=0.24",
+    "hydra-core~=1.1",
+    "matplotlib~=3.4",
+    "prefect~=0.14",
+    "cloudpickle~=1.6",
+]
+requires-python = ">=3.8"
+dynamic = ["classifiers"]
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[tool.pdm]
+includes = []
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest<7.0,>=6.0",
+]
+
+[[tool.pdm.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple/"
+verify_ssl = false
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+serve = {call = "src.serving.__main__:main"}

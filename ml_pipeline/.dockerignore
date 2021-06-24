@@ -1,0 +1,9 @@
+.git
+.cache
+__pycache__
+__pypackages__
+node_modules
+data
+venv
+mlruns
+outputs

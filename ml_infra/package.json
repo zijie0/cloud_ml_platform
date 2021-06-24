@@ -1,0 +1,13 @@
+{
+    "name": "ml_infra",
+    "devDependencies": {
+        "@types/node": "^10.0.0"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^4.0.0",
+        "@pulumi/awsx": "^0.30.0",
+        "@pulumi/eks": "^0.31.0",
+        "@pulumi/pulumi": "^3.0.0",
+        "@pulumi/random": "^4.2.0"
+    }
+}

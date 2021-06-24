@@ -1,0 +1,3 @@
+name: ml_pipeline-infra
+runtime: nodejs
+description: Serving infrastructure for ml_pipeline
